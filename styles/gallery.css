@@ -1,0 +1,152 @@
+.food-gallery {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    
+}
+
+.food-gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-description {
+    padding: 15px;
+    background-image:url(../images/drink.jpg);
+}
+
+.food-description h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #ea7508;
+}
+
+.food-gallery h2 {
+    font-size: 30px;
+    color: green;
+}
+
+
+
+.header {
+    /* background-color: #c31307; */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between logo-container and nav */
+    align-items: center;
+    position: relative;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust as needed for spacing */
+}
+
+.logo {
+    height: 40px; /* Adjust the height as needed */
+    width: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Style for the heading */
+.logo-container h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: orangered;
+}
+
+/* Style for navigation bar */
+.header nav {
+    position: relative;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 80px;
+}
+
+.header nav ul li a {
+    color: rgb(237, 17, 17);
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+section{
+    border-radius: 30px;
+}
+h1{
+    text-align:center;
+    color:green;
+    font-size: 40px;
+}
+.options,label,input{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+
+}
+
+
+.content button{
+    background-color: #eb4619;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 10%;
+    text-align: center;
+    margin-left: 170vh;
+    font-size: 20px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}

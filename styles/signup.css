@@ -1,0 +1,210 @@
+/* General Styles */
+
+.header {
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Style for the heading */
+.logo-container h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: orangered;
+}
+
+/* Style for navigation bar */
+.header nav {
+    position: relative;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-right: 50px;
+}
+
+.header nav ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Signup Container Styles */
+.signup-container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-right: 2px;
+    float: right;
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-group input[type="date"] {
+    padding: 5px;
+}
+
+button[type="submit"] {
+    width: 80%;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d96b06;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group small {
+    color: #666;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #ea7508;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+body {
+    background-image: url('../images/cook3.jpg');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left left;
+    background-attachment: fixed;
+}
+
+p {
+    color: rgb(98, 186, 65);
+    text-align: left;
+    font-size: 20px;
+}
+
+.content button {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 10%;
+    text-align: center;
+    margin-left: 150vh;
+}
+
+/* Additional styles for new elements */
+.form-group select {
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+
+.form-group label[for="terms"] a {
+    color: red;
+    text-decoration: none;
+}
+
+.form-group label[for="terms"] a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,342 @@
+.header {
+    /* background-color: #c31307; */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust as needed for spacing */
+}
+
+.logo {
+    height: 40px; /* Adjust the height as needed */
+    width: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Style for the heading */
+.logo-container h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+}
+
+/* Style for navigation bar */
+.header nav {
+    position: relative;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 80px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Login form styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    position: absolute;
+    right: 20px; 
+    top: 50px; 
+
+}
+
+.login-header h3 {
+    color: #0c0a0a;
+    font-size: xx-large;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1d1814;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    padding: 10px;
+    font-size:small;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    padding: 10px;
+    font-size:small;
+    color: white;
+    background-color: #c36b07;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #ea7508;
+}
+
+.login-form p {
+    font-size: medium;
+    text-align: center;
+}
+
+/* Content section styling */
+.content h1 {
+    color:green;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.content a {
+    color: #c31307;
+    font-size: x-large;
+    box-shadow: green;
+}
+.content button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 15%;
+    font-size: 20px;
+    margin-top: 10vh;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/food3.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding-bottom: 100px;
+    
+}
+
+.footer {
+    background-color: #d6cbc9;
+    color: rgb(17, 14, 14);
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    box-sizing: border-box; 
+    z-index: 1000;
+}
+
+
+.footer .social-icons {
+    margin: 10px 0;
+}
+
+.footer .social-icon {
+    font-size: 18px;
+    margin: 0 8px; 
+    color: rgb(54, 51, 51);
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #125712;
+}
+
+.footer p {
+    margin-top: 5px; /* Reduced margin above the paragraph */
+    font-size: 14px; /* Smaller font size */
+    color: rgb(54, 51, 51);
+}
+.contact-info {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    margin: 20px 0;
+    margin-right: 20vh;
+}
+
+
+.location, .contact-info .contact-details {
+    width: 20%;
+    color:black ;
+    font-size: 20px;
+    
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Offers Section */
+.offers-section {
+    padding: 40px;
+    text-align: center;
+    margin-top: 40vh; 
+    margin-bottom: 80px;
+    border:1px solid white;
+    background-color: #ccc;
+}
+
+.offers-section h2 {
+    font-size: 36px;
+    color: rgb(162, 35, 35);
+    margin-bottom: 20px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.offer-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 25%;
+    
+}
+
+.offer-card h3 {
+    color: #c31307;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.offer-card button {
+    background-color: #c31307;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.offer-card button:hover {
+    background-color: #ea7508;
+}
+
+.offer-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+    margin-bottom: 15px; 
+    object-fit: cover; 
+}
+
+/* Container to hold both sections */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Left-align the testimonials section */
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    max-width: 600px;
+    flex: 1; /* Allow it to take up remaining space */
+}
+
+/* Signature dishes positioned to the right */
+.signature-dishes {
+    background-color: #fff;
+    padding: 40px;
+    text-align: left; /* Ensure the text is left-aligned */
+    max-width: 600px; /* Set a max width */
+    margin-left: 40px; /* Add spacing between the sections */
+    flex: 1; /* Ensure both sections have equal width */
+}
+
+/* Existing styles for signature dishes */
+.signature-dishes h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dish-card {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dish-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.dish-card h3 {
+    font-size: 20px;
+    color: #ea7508;
+}
+
+.dish-card p {
+    font-size: 16px;
+    color: #555;
+}
+ 
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Namis' Restaurant</title>
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p><b>Don't have an account with us yet? We're excited to have you here!<br>  Sign up for exclusive offers and personalized recommendations.</b></p>
+
+    <div class="content">
+        <a href="../pages/menu.html"><button>Start Ordering</button></a>
+    </div>
+
+    <div class="signup-container">
+        <h2>Signup Form</h2>
+        <form action="submit_signup.php" method="POST">
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <small>Password must be at least 8 characters long and include a number or special character.</small>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <label for="communication-method">Preferred Communication Method:</label>
+                <select id="communication-method" name="communication-method">
+                    <option value="email">Email</option>
+                    <option value="sms">SMS</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="newsletter"> Subscribe to our newsletter for promotions and deals</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="terms" required> I accept the <a href="../terms.html">Terms & Conditions</a> and the <a href="../privacy.html">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

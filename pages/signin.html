@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namis' Restaurant - Sign In</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <h1><b>Namis</b></h1>
+            <img src="./images/logo2-removebg-preview.png" alt="logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h3>Sign in Here</h3>
+        </div>
+       <!-- Action for sign-in submission -->
+<form class="login-form" action="../pages/menu.html" >
+    <input type="email" placeholder="Enter Email Here" required>
+    <input type="password" placeholder="Enter Password Here" required>
+    <button type="submit">Sign in</button>
+    <p style="color: white;">Don't have an account?<br>
+        <!-- Corrected link to signup page -->
+        <span><a href="./signup.html" style="color: #ea7508; text-decoration: none;">Sign up</a></span>
+        <span style="color: white;"> here</span>
+    </p>
+</form>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+        </div>
+        <p>&copy; 2024 Namis' Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
